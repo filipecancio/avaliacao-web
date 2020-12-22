@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Web</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <h1>Questão 02</h1>
+    <a href="../index.html">Voltar</a>
+    <div class="sq-container">
+        <div class="sq-form">
+            <p>Informe saque (R$)</p>
+            <input id="valor" type="number" min="2"/>
+        </div>
+        <button id="sqbtn" onclick="resultado()">
+            Identificar Cédulas
+        </button>
+    </div>
+    <div class="sq-container-list">
+        <div id="2rcont" class="sq-cedulas">
+            <img id="2rimg" src=""/>
+            <div class="sq-qt"><p id="2rval"></p><p>Cédula(s)</p></div>
+        </div>
+        <div id="5rcont" class="sq-cedulas">
+            <img id="5rimg" src=""/>
+            <div class="sq-qt"><p id="5rval"></p><p>Cédula(s)</p></div>
+        </div>
+        <div id="10rcont" class="sq-cedulas">
+            <img id="10rimg" src=""/>
+            <div class="sq-qt"><p id="10rval"></p><p>Cédula(s)</p></div>
+        </div>
+        <div id="20rcont" class="sq-cedulas">
+            <img id="20rimg" src=""/>
+            <div class="sq-qt"><p id="20rval"></p><p>Cédula(s)</p></div>
+        </div>
+        <div id="50rcont" class="sq-cedulas">
+            <img id="50rimg" src=""/>
+            <div class="sq-qt"><p id="50rval"></p><p>Cédula(s)</p></div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
