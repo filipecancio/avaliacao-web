@@ -1,16 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avaliação Web</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <h1>Questão 02</h1>
-    <a href="./index.html">Voltar</a>
+<h1>Questão 03</h1>
+    <a href="?i=page01">Voltar</a>
     <div class="sq-container-list">
         <div id="2rcont" class="sq-cedulas">
             <img id="2rimg" src=""/>
@@ -33,6 +22,3 @@
             <div class="sq-qt"><p id="50rval"></p><p>Cédula(s)</p></div>
         </div>
     </div>
-    <script src="./assets/js/script.js"></script>
-</body>
-</html>

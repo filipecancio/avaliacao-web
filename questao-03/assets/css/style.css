@@ -12,6 +12,9 @@ body{
 a{
     text-decoration: none;
     color: #ffffffff;
+    margin: 5px;
+    padding: 2px;
+    background-color: #7d838f;
 }
 .sq-container-list{
     display: flex;

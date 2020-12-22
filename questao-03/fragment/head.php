@@ -9,8 +9,3 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Questão 04</h1>
-    <a href="../index.html">Voltar</a>
-    
-</body>
-</html>
