@@ -13,3 +13,42 @@ a{
     text-decoration: none;
     color: #ffffffff;
 }
+.sq-container-list{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.sq-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+}
+.sq-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.sq-form input{
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+}
+.sq-cedulas{
+    margin: 5px;
+    display: none;
+    flex-direction: column;
+    border: 1px solid;
+    border-color: #ffffffff;
+}
+.sq-cedulas img{
+    width: 120px;
+}
+.sq-cedulas div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
