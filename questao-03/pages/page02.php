@@ -17,16 +17,36 @@
         $result['reais50'] = $result['reais50'] +1;
     }
     while($valor >= 20){
-        $valor = $valor - 20;
-        $result['reais20'] = $result['reais20'] +1;
+        if($valor != 23){
+            if($valor != 21){
+                $valor = $valor - 20;
+                $result['reais20'] = $result['reais20'] +1;
+            }else{
+                break;
+            }
+        }else{
+            break;
+        }
     }
     while($valor >= 10){
-        $valor = $valor - 10;
-        $result['reais10'] = $result['reais10'] +1;
+        if($valor != 13){
+            if($valor != 11){
+                $valor = $valor - 10;
+                $result['reais10'] = $result['reais10'] +1;
+            }else{
+                break;
+            }
+        }else{
+            break;
+        }
     }
     while($valor >= 5){
-        $valor = $valor - 5;
-        $result['reais5'] = $result['reais5'] +1;
+        if($valor % 2 != 0){
+            $valor = $valor - 5;
+            $result['reais5'] = $result['reais5'] +1;
+        }else{
+            break;
+        }
     }
     while($valor >= 2){
         $valor = $valor - 2;

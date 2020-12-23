@@ -12,17 +12,36 @@ function getValores(valor){
         result.reais50 ++;
     }
     while(valor >= 20){
-        valor = valor - 20;
-        result.reais20 ++;
+        if(valor != 23){
+            if(valor != 21){
+                valor = valor - 20;
+                result.reais20 ++;
+            }else{
+                break;
+            }
+        }else{
+            break;
+        }
     }
     while(valor >= 10){
-        valor = valor - 10;
-        console.log(valor)
-        result.reais10 ++;
+        if(valor != 13){
+            if(valor != 11){
+                valor = valor - 10;
+                result.reais10 ++;
+            }else{
+                break;
+            }
+        }else{
+            break;
+        }
     }
     while(valor >= 5){
-        valor = valor - 5;
-        result.reais5 ++;
+        if(valor % 2 != 0){
+            valor = valor - 5;
+            result.reais5 ++;
+        }else{
+            break;
+        }
     }
     while(valor >= 2){
         valor = valor - 2;

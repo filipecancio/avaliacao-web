@@ -1,39 +1,58 @@
-function getValores(valor){
-    var result = {
-        "reais50":0,
-        "reais20":0,
-        "reais10":0,
-        "reais5":0,
-        "reais2":0, 
-        "reais1":0,       
+    function getValores(valor){
+        var result = {
+            "reais50":0,
+            "reais20":0,
+            "reais10":0,
+            "reais5":0,
+            "reais2":0, 
+            "reais1":0,       
+        }
+        while(valor >= 50){
+            valor = valor - 50;
+            result.reais50 ++;
+        }
+        while(valor >= 20){
+            if(valor != 23){
+                if(valor != 21){
+                    valor = valor - 20;
+                    result.reais20 ++;
+                }else{
+                    break;
+                }
+            }else{
+                break;
+            }
+        }
+        while(valor >= 10){
+            if(valor != 13){
+                if(valor != 11){
+                    valor = valor - 10;
+                    result.reais10 ++;
+                }else{
+                    break;
+                }
+            }else{
+                break;
+            }
+        }
+        while(valor >= 5){
+            if(valor % 2 != 0){
+                valor = valor - 5;
+                result.reais5 ++;
+            }else{
+                break;
+            }
+        }
+        while(valor >= 2){
+            valor = valor - 2;
+            result.reais2 ++;
+        }
+        while(valor >= 1){
+            valor = valor - 1;
+            result.reais1 ++;
+        }
+        return result;
     }
-    while(valor >= 50){
-        valor = valor - 50;
-        result.reais50 ++;
-    }
-    while(valor >= 20){
-        valor = valor - 20;
-        result.reais20 ++;
-    }
-    while(valor >= 10){
-        valor = valor - 10;
-        console.log(valor)
-        result.reais10 ++;
-    }
-    while(valor >= 5){
-        valor = valor - 5;
-        result.reais5 ++;
-    }
-    while(valor >= 2){
-        valor = valor - 2;
-        result.reais2 ++;
-    }
-    while(valor >= 1){
-        valor = valor - 1;
-        result.reais1 ++;
-    }
-    return result;
-}
 
 function resultado(){
     var valor = document.getElementById("valor").value;
