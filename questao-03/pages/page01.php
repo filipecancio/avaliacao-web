@@ -1,11 +1,9 @@
 <h1>Questão 03</h1>
     <a href="../index.html">Voltar</a>
-    <div class="sq-container">
+    <form class="sq-container" method="POST" action="result.php">
         <div class="sq-form">
             <p>Informe saque (R$)</p>
-            <input id="valor" type="number" min="2"/>
+            <input id="valor"  name="valor" type="number" min="2"/>
         </div>
-        <a id="sqbtn" onclick="resultado()" href="?i=page02">
-            Identificar Cédulas
-        </a>
-    </div>
+        <button id="sqbtn" onclick="resultado()"  type="submit">Identificar Cédulas</button>
+    </form>
