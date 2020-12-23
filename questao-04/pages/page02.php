@@ -1,4 +1,15 @@
+<?php 
+    $valor = filter_input(INPUT_POST, 'avaliacao');
+    $conn = dbConnect();
+    dbClose($conn);
+
+    $sql = "select C.nome,A.dataHorario from Cliente C inner join Avaliacao A on C.id = A.idCliente where A.nivel='".$valor."';";
+    $result -> $mysqli -> query($sql);
+    $row = $result -> fetch_array(MYSQLI_ASSOC);
+?>
+
 <h1>Questão 04</h1>
+<h2>Avaliações (<?php echo $valor ?>)</h2>
     <div class="sq-container-list">
     <table style="width:100%">
     <thead>
@@ -8,22 +19,12 @@
       </tr>
       </thead>
     <tbody>
+    <?php foreach($row as $res):?>	
       <tr>
-        <td>ANA LAURA AMORIM VIANA MARTINS</td>
-        <td>03/12/2020 07:55:33</td>
+        <td><?php echo $res['nome']?></td>
+        <td><?php echo $res['dataHorario']?></td>
       </tr>
-      <tr>
-        <td>CLARINE SARMENTO DE OLIVEIRA</td>
-        <td>02/12/2020 18:20:42</td>
-      </tr>
-      <tr>
-        <td>IONE FERNANDA LEMOS FONTES</td>
-        <td>23/07/2019 00:10:00</td>
-      </tr>
-      <tr>
-        <td>QUETILLE SANTOS BARRETO</td>
-        <td>22/07/2019 11:46:00</td>
-      </tr>
+  	<?php endforeach; ?>
       <tfoot>
         <tr>
             <th scope="row">Percentual em relação ao total de avaliações</th>
@@ -33,4 +34,4 @@
     </table>
     </div>
 
-    <a href="?i=page01">Voltar</a>
+    <a href="index.php">Voltar</a>

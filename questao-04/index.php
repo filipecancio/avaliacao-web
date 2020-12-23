@@ -1,4 +1,5 @@
 <?php
+    require 'fragment/config.php';
     $page='page01';
     if(isset($_GET['i'])){
         $page = addslashes($_GET['i']);

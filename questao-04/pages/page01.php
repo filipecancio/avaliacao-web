@@ -1,15 +1,15 @@
 <h1>Questão 04</h1>
 <h2>Consulta de Avaliações</h2>
-    <div class="av-container">
+    <form class="av-container"  method="POST" action="result.php">
         <div class="av-form">
             <select name="avaliacao" id="avaliacao">
               <option value="excelente">Excelente</option>
-              <option value="razoavel">Raoável</option>
-              <option value="mercedes">Ruim</option>
+              <option value="razoavel">Razoável</option>
+              <option value="ruim">Ruim</option>
             </select>
         </div>
-        <a id="sqbtn" onclick="resultado()" href="?i=page02">
+        <button id="sqbtn" onclick="resultado()"  type="submit">
             Consultar
-        </a>
-    </div>
+</button>
+</form>
     <a href="../index.html">Voltar</a>
